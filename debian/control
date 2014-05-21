@@ -1,12 +1,16 @@
 Source: ptux-sdk-overo
-Section: unknown
+Section: embedded
 Priority: extra
-Maintainer: unknown <bgat@mercury.billgatliff.com>
+Maintainer: Bill Gatliff <bgat@billgatliff.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 
 Package: ptux-sdk-overo
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Pragmatux SDK for Gumstix Overo
+ Meta-package referencing SDK tools for the
+ Gumstix Overo COM target (http://gumstix.com)
+Depends:
+ ptux-sdk-armhf,
+ mkos-overo,
+ ${misc:Depends}
