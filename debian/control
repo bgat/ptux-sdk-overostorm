@@ -1,12 +1,16 @@
 Source: ptux-sdk-boneblack
-Section: unknown
+Section: embedded
 Priority: extra
-Maintainer: Bill Gatliff <bgat@ptuxvm.billgatliff.com>
+Maintainer: Bill Gatliff <bgat@billgatliff.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 
 Package: ptux-sdk-boneblack
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Pragmatux SDK for Beaglebone Black
+ Meta-package referencing SDK tools for the
+ Beaglebone Black target (http://beagleboard.org)
+Depends:
+ ptux-sdk-armhf,
+ mkos-boneblack,
+ ${misc:Depends}
