@@ -1,12 +1,16 @@
 Source: ptux-sdk-overostorm
-Section: unknown
+Section: embedded
 Priority: extra
-Maintainer: Bill Gatliff <bgat@ptuxvm.billgatliff.com>
+Maintainer: Bill Gatliff <bgat@billgatliff.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 
 Package: ptux-sdk-overostorm
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Pragmatux SDK for Overo Storm
+ Meta-package referencing SDK tools for the
+ Gumstix Overo Storm target (http://gumstix.com)
+Depends:
+ ptux-sdk-armhf,
+ mkos-overostorm,
+ ${misc:Depends}
